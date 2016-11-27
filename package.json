@@ -4,6 +4,7 @@
   "description": "R&D Dashboard 3.0",
   "author": "Henrik Paul <henrik.paul@gmail.com>",
   "private": true,
+  "license": "ISC",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
