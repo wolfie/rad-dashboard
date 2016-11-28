@@ -30,16 +30,16 @@
         return this.maxTime - this.startTime;
       },
       todayFraction: function () {
-        return (new Date().getTime() - this.startTime) / this.maxTimeRelative;
+        return this.fractionize(new Date());
       },
       maybeFraction: function () {
-        return (this.maybe.getTime() - this.startTime) / this.maxTimeRelative;
+        return this.fractionize(this.maybe);
       },
       probablyFraction: function () {
-        return (this.probably.getTime() - this.startTime) / this.maxTimeRelative;
+        return this.fractionize(this.probably);
       },
       targetFraction: function () {
-        return (this.target.getTime() - this.startTime) / this.maxTimeRelative;
+        return this.fractionize(this.target);
       }
     },
     filters: {
@@ -52,6 +52,10 @@
       /** @param {number} number */
       percentager: function(number) {
         return (number * 100) + '%';
+      },
+      /** @param {Date} date */
+      fractionize: function(date) {
+        return (date.getTime() - this.startTime) / this.maxTimeRelative;
       }
     }
   }
