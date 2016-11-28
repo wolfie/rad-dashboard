@@ -12,6 +12,7 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
+    'semi': 0,
     'brace-style': 0,
     'space-before-function-paren': 0,
     // allow paren-less arrow functions
