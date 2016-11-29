@@ -64,4 +64,7 @@
   .wrapper {
     display: flex;
   }
+  .graph {
+    font-size: 80%
+  }
 </style>
