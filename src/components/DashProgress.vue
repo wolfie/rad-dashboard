@@ -2,14 +2,16 @@
   <div>
     <div v-for="project in projects">
       <h1>{{ project.name }}</h1>
-      <ul>
-        <li v-for="highlight in project.highlights">{{ highlight }}</li>
-      </ul>
-      <dash-progress-graph
-        :start="project.graphdata.start"
-        :target="project.graphdata.target"
-        :maybe="project.graphdata.maybe"
-        :probably="project.graphdata.probably"></dash-progress-graph>
+      <div class="wrapper">
+        <ul>
+          <li v-for="highlight in project.highlights">{{ highlight }}</li>
+        </ul>
+        <dash-progress-graph class="graph"
+          :start="project.graphdata.start"
+          :target="project.graphdata.target"
+          :maybe="project.graphdata.maybe"
+          :probably="project.graphdata.probably"></dash-progress-graph>
+      </div>
     </div>
   </div>
 </template>
@@ -59,4 +61,7 @@
 </script>
 
 <style scoped>
+  .wrapper {
+    display: flex;
+  }
 </style>

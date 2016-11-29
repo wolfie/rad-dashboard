@@ -77,7 +77,6 @@
 
   .progress {
     background-color: #ddd;
-    height: 20px;
   }
 
   .start {
@@ -94,6 +93,7 @@
 
   .above {
     top: 0;
+    height: 20px;
   }
 
   .start {
