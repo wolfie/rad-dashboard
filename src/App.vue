@@ -46,6 +46,12 @@ export default {
 </script>
 
 <style>
+  ul {
+    margin: 0;
+    -webkit-padding-start: 0;
+    list-style: none;
+  }
+
   .root {
     display: flex;
     flex-direction: column;

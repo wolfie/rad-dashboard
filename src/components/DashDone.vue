@@ -46,4 +46,7 @@
 </script>
 
 <style scoped>
+  ul {
+    margin: 0 0 0.5em 0;
+  }
 </style>
