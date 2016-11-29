@@ -1,7 +1,7 @@
 <template>
   <div class="support">
     <div v-for="(support, team) in supports" class="team">
-      <h1>{{ team }}: {{ support.name }}</h1>
+      <h2>{{ team }}: {{ support.name }}</h2>
       <ul>
         <li v-for="(info, platform) in support.info">{{ platform }}: {{ info }}</li>
       </ul>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="project in projects">
-      <h1>{{ project.name }}</h1>
+      <h2>{{ project.name }}</h2>
       <div class="wrapper">
         <ul>
           <li v-for="highlight in project.highlights">{{ highlight }}</li>
